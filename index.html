@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">fitness</a>
+            <div class="toggleMenu" onclick="toggleMenu()"></div>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Trainers</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="box">
+                <h2>Build Perfect Body <br>
+                With Clean Mind.</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     Excepturi maxime libero atque, accusantium accusamus 
+                     cupiditate magnam dolore qui laborum! Iusto odit maxime 
+                     eligendi qui. Nesciunt quo quasi nostrum accusamus exercitationem.
+                </p>
+                <a href="#">Get Started</a>
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="images/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="images/instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+        </ul>
+    </section>
+    
+
+    <script>
+        function toggleMenu(){
+            const toggle = document.querySelector('.toggleMenu');
+            const navigation = document.querySelector('.navigation');
+
+            toggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
